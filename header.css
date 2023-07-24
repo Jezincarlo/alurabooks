@@ -1,0 +1,87 @@
+.container__alurabooks {
+
+    display: none;
+}
+
+.opções {
+    display: none;
+}
+
+.container__texto {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .container__alurabooks,
+    .container__titulo-negrito {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+    }
+
+    .container__alurabooks {
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo-negrito {
+        font-size: 700;
+    }
+
+    .opções {
+        display: flex;
+
+        color: black;
+        font-size: 16px;
+        font-family: Poppins;
+        font-weight: 400;
+        text-decoration: none;
+        padding: 0 1em;
+    }
+
+    .opções__links {
+        text-decoration: none;
+        color: black;
+    }
+
+    .container__imagem-transparente {
+        display: none;
+    }
+
+    .cabeçalho__menu-hamburguer {
+        display: none;
+    }
+
+    .opções__botão:checked~.lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opções__botão {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .cabeçalho {
+        padding: 0 2em;
+
+    }
+
+    .opções {
+        margin-right: auto;
+    }
+
+    .container__texto {
+        display: block;
+    }
+}
